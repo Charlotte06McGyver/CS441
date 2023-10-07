@@ -1,17 +1,18 @@
 package fr.esisar.calculatrice.operations.unaires;
 
+import fr.esisar.calculatrice.operations.Operation;
 import fr.esisar.calculatrice.operations.OperationUnaire;
 
-public class ValeurAbsolue extends OperationUnaire {
+public class ValeurAbsolue extends OperationUnaire implements Operation {
 
-	public ValeurAbsolue() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String getNom() {
+		return "abs";
 	}
 
 	@Override
 	protected Double doCalculer(Double operande1) {
-		// TODO Auto-generated method stub
-		return null;
+		return Math.abs(operande1);
 	}
 
 }

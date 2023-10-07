@@ -1,17 +1,18 @@
 package fr.esisar.calculatrice.operations.unaires;
 
+import fr.esisar.calculatrice.operations.Operation;
 import fr.esisar.calculatrice.operations.OperationUnaire;
 
-public class Tangente extends OperationUnaire {
+public class Tangente extends OperationUnaire implements Operation {
 
-	public Tangente() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String getNom() {
+		return "tan";
 	}
 
 	@Override
 	protected Double doCalculer(Double operande1) {
-		// TODO Auto-generated method stub
-		return null;
+		return Math.tan(operande1);
 	}
 
 }

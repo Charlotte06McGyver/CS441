@@ -1,11 +1,13 @@
 package fr.esisar.calculatrice.operations.binaires;
 
+import fr.esisar.calculatrice.operations.Operation;
 import fr.esisar.calculatrice.operations.OperationBinaire;
 
-public class Multiplier extends OperationBinaire {
+public class Multiplier extends OperationBinaire implements Operation {
 
-	public Multiplier() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String getNom() {
+		return "*";
 	}
 
 	@Override

@@ -1,16 +1,18 @@
 package fr.esisar.calculatrice.operations.unaires;
 
+import fr.esisar.calculatrice.operations.Operation;
 import fr.esisar.calculatrice.operations.OperationUnaire;
 
-public class Cosinus extends OperationUnaire {
+public class Cosinus extends OperationUnaire implements Operation {
 
-	public Cosinus() {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String getNom() {
+		return "cos";
 	}
 
 	@Override
 	protected Double doCalculer(Double operande1) {
-		return null;
+		return Math.cos(operande1);
 	}
 
 }
